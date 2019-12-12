@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ButtonArray</title>
+</head>
+	<script src="../js/jquery/2.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
+	<script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+    <style>
+        div{
+            margin: 5px 0px;
+        }
+    </style>
+<body>
+    <!-- 按钮组 -->
+        <div class="btn-group" role="group" aria-label="web">
+            <button type="button" class="btn btn-default">Html</button>
+            <button type="button" class="btn btn-default">Css</button>
+            <button type="button" class="btn btn-default">JS</button>
+        </div>
+
+    <!-- 按钮工具栏 -->
+        <div class="btn-toolbar" role="toolbar" aria-label="study">
+            <div class="btn-group" role="group" aria-label="java">
+                <button type="button" class="btn btn-default">基础</button>
+                <button type="button" class="btn btn-default">中级</button>
+                <button type="button" class="btn btn-default">高级</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="web">
+                <button type="button" class="btn btn-default">HTML</button>
+                <button type="button" class="btn btn-default">CSS</button>
+                <button type="button" class="btn btn-default">JS</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="framework">
+                <button type="button" class="btn btn-default">Hiber</button>
+                <button type="button" class="btn btn-default">Struts</button>
+                <button type="button" class="btn btn-default">Spring</button>
+            </div>
+        </div>
+
+        <!-- 改变按钮组的大小->btn-group-lg>btn-group>btn-group-sm>btn-group-xs -->
+        <!-- 改变单个按钮就是btn-lg>btn>... -->
+
+        <!-- 垂直排列的按钮组 -->
+        <div class="btn-group-vertical" role="group" aria-label="web">
+            <button type="button" class="btn btn-default">HTML</button>
+            <button type="button" class="btn btn-default">CSS</button>
+            <button type="button" class="btn btn-default">JS</button>
+        </div>
+
+        <!-- 复选按钮组 -->
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active">
+                <input type="checkbox" checked>LOL(默认选中)
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" > DOTA
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" > WOW
+            </label>
+        </div>
+
+        <!-- 单选按钮组 -->
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active">
+                <input type="radio" checked>LOL(默认选中)
+            </label>
+            <label class="btn btn-default">
+                <input type="radio" > DOTA
+            </label>
+            <label class="btn btn-default">
+                <input type="radio" > WOW
+            </label>
+        </div>
+
+        <!-- 单按钮下拉菜单 -->
+        <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle "  data-toggle="dropdown">
+                 default
+                  <span class="caret"></span>         
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                        <li>
+                           <a href="#">HTML</a>            
+                        </li>
+                        <li role="presentation">
+                           <a href="#">CSS</a>             
+                        </li>
+                    
+                        <li role="presentation">
+                           <a href="#">Javascript</a>          
+                        </li>
+                        <li role="presentation">
+                           <a href="#">AJAX</a>            
+                        </li>
+                </ul>
+        </div>
+        
+</body>
+</html>

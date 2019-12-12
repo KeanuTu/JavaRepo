@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+</head>
+	<script src="../js/jquery/2.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
+	<script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+<body>
+    <div class="dropdown">      <!-- 菜单div -->
+        <!-- 下拉菜单按钮 -->
+        <button class="btn btn-defalut dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+            选择
+            <span class="caret"></span>
+        </button>
+        <!-- 菜单项 -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a href="#">HTML</a></li>
+            <!-- 必须配合a标签才有鼠标滑过选中 -->
+            <li role="presentation"><a href="#">CSS</a></li>
+            <li role="presentation"><a href="#">JavaScript</a></li>
+            
+            <li class="divider"></li>
+            <li class="dropdown-header"">标题头不可点击</li>
+            <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">开发中...</a></li>
+        </ul>
+    </div>
+</body>
+</html>

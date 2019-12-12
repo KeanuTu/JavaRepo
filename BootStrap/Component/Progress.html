@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Progress</title>
+</head>
+	<script src="../js/jquery/2.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
+	<script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+	<style>
+	div.progress{
+		margin: 5px;
+	}
+	</style>
+<body>
+    <div class="progress">
+		<!-- min-width是设置进度条的最低宽度，即0%的长度 -->
+		<div class="progress-bar" style="width:60%;min-width:2em;">
+			60%
+		</div>
+	</div>
+	
+	<!-- 换个颜色，跟其他一样 -->
+	<div class="progress">
+			<div class="progress-bar progress-bar-warning" style="width:50%;min-width:2em;">
+				50%
+			</div>
+		</div>
+	
+	<!-- 加个条纹效果 -->
+	<div class="progress">
+			<div class="progress-bar progress-bar-success progress-bar-striped" style="width:50%;min-width:2em;">
+				50%
+			</div>
+			<!-- 进度条叠加是在原本基础上增加 -->
+			<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+				</div>
+			<div class="progress-bar progress-bar-danger" style="width: 10%">
+				</div>
+		</div>
+</body>
+</html>
